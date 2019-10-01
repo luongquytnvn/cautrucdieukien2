@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập vào giá trị a:'));
+    let b = parseInt(prompt('Nhập vào giá trị b:'));
+    let c = parseInt(prompt('Nhập vào giá trị c:'));
+    let delta = b * b - 4 * a * c;
+    let x;
+    if (a == 0) {
+        x = -b / c;
+        alert('Nghiệm của phương trình là: x = ' + x);
+    } else if (delta < 0) {
+        alert('Phương trình vô nghiệm');
+    } else if (delta == 0) {
+        x = -b / (2 * a);
+        alert('Nghiệm của phương trình là: x1 = x2 = ' + x);
+    } else {
+        x1 = (-b - Math.sqrt(delta)) / (2 * a);
+        x2 = (-b + Math.sqrt(delta)) / (2 * a);
+        alert('Nghiệm của phương trình là: x1 = ' + x1 + ' , x2 = ' + x2);
+    }
+</script>
+</body>
+</html>
